@@ -1,0 +1,91 @@
+1/
+
+git commit --amend 
+-> muốn thay đổi lại commit cuối cùng.
+
+git commit --amend -m”<message>
+-> muốn change lại message khi commit
+
+git restore --staged <file>
+-> Di chuyển file từ vùng staging về vùng working directory 
+
+git reset HEAD~1
+-> Di chuyển file từ vùng repository về vùng working directory
+-> Quay lại commit trước đó 1 bước (bỏ commit gần nhất)
+
+2/
+
+a.
+- Working directory: file1, file2, file3
+- Staging:
+- Repository:
+
+b.
+- Working directory: file1, file2, file3
+- Staging:
+- Repository: 
+
+c.
+- Working directory: file1, file2, file3
+- Staging: 
+- Repository:
+
+d.
+- Working directory: file1, file2, file3
+- Staging: file1
+- Repository:
+
+e.
+- Working directory: file1, file2, file3
+- Staging:
+- Repository: file1
+
+f.
+- Working directory: file1, file2, file3
+- Staging: file2, file3
+- Repository: file1
+
+g.
+- Working directory: file1, file2, file3
+- Staging: file3
+- Repository: file1
+
+h.
+- Working directory: file1, file2, file3
+- Staging: 
+- Repository: file1, file3
+
+i.
+- Working directory: file1, file2, file3
+- Staging:
+- Repository: file1
+
+3/
+
+a.
+- Working directory: 
+- Staging:
+- Repository: 
+
+b.
+- Working directory: file1.txt, file2.txt, oops/file3.txt
+- Staging:
+- Repository: 
+
+c.
+- Working directory: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- Staging:
+- Repository: 
+
+d.
+- Working directory: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- Staging: file2.txt, .gitignore
+- Repository: 
+
+e. 
+- Working directory: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- Staging: 
+- Repository: file2.txt, .gitignore
+
+
+
