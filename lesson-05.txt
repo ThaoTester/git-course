@@ -1,0 +1,90 @@
+1. Cấu trúc DOM cơ bản của một trang web bao gồm các thẻ gì?
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tiêu đề trang</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Tiêu đề chính</h1>
+    <p>Đoạn văn bản...</p>
+  </body>
+</html>
+
+- Giải thích:
+
+<!DOCTYPE html> ->  Khai báo kiểu tài liệu, giúp trình duyệt hiểu đây là HTML5.
+
+<html> -> Thẻ gốc bao toàn bộ nội dung trang.
+
+<head> -> Phần đầu trang
+
+    <title>: Tiêu đề trang.
+
+    <meta>: Cấu hình charset, SEO, responsive...
+
+    <link>: Liên kết CSS, icon...
+
+    <script>: Nhúng file JavaScript.
+
+<body> -> Phần thân trang, hiển thị nội dung người dùng.
+
+    Các thẻ heading: <h1> … <h6>
+
+    Văn bản: <p>, <span>, <div>
+
+    Ảnh, liên kết: <img>, <a>
+
+    Danh sách: <ul>, <ol>, <li>
+
+    Bảng: <table>, <tr>, <td>
+
+    Form: <form>, <input>, <button>
+
+2. Hãy mô tả cấu trúc html của 1 bảng (table)
+
+<table>
+  <thead>
+    <tr>
+      <th>Cột 1</th>
+      <th>Cột 2</th>
+      <th>Cột 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dòng 1 - Cột 1</td>
+      <td>Dòng 1 - Cột 2</td>
+      <td>Dòng 1 - Cột 3</td>
+    </tr>
+    <tr>
+      <td>Dòng 2 - Cột 1</td>
+      <td>Dòng 2 - Cột 2</td>
+      <td>Dòng 2 - Cột 3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Chân bảng (tổng, ghi chú...)</td>
+    </tr>
+  </tfoot>
+</table>
+
+- Giải thích
+
+<table>: thẻ bao ngoài.
+
+<thead>: phần đầu bảng.
+
+<tr>: một hàng trong bảng.
+
+<th>: ô tiêu đề, mặc định chữ đậm và canh giữa.
+
+<tbody>: phần thân bảng.
+
+<td>: ô dữ liệu trong bảng.
+
+<tfoot>: phần cuối bảng.
